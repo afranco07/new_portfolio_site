@@ -4,4 +4,6 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse('Rango says hey there partner!')
+    context_dict = {'boldmessage': "Crunchy, creamy, cookie, candy, cupcake!"}
+
+    return render(request, 'portfolio/index.html', context=context_dict)
