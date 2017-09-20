@@ -5,12 +5,12 @@
 <div class="row">
     <div class="col s12">
         <ul class="tabs tabs-fixed-width">
-            <li class="tab col s3"><a class="active" href="#test1">Experience</a></li>
-            <li class="tab col s3"><a href="#test2">Languages &amp; Technologies</a></li>
-            <li class="tab col s3"><a href="#test3">Education</a></li>
+            <li class="tab col s3"><a class="active" href="#experience">Experience</a></li>
+            <li class="tab col s3"><a href="#languages">Languages &amp; Technologies</a></li>
+            <li class="tab col s3"><a href="#education">Education</a></li>
         </ul>
     </div>
-    <div id="test1" class="col s12">
+    <div id="experience" class="col s12 center-align">
         <ul>
             <h5>Cox Automotive - Dealertrack</h5>
             <h6><strong>Software Engineer,</strong> Intern</h6>
@@ -29,14 +29,41 @@
         <ul>
             <h5>York College, City University of New York</h5>
             <h6><strong>Robotics Intern</strong></h6>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Created a hexacopter with the instruction of a mentor</li>
+            <li>Learned how to create 3D graphics using computer software (TinkerCad)</li>
+            <li>Designed my own objects using a 3D printer and TinkerCad Software</li>
+            <li>Tested and debugged the hardware using the Arduino software</li>
+            <li>Programmed the MultiWii circuit board to use all of the added components</li>
         </ul>
     </div>
-    <div id="test2" class="col s12">Langauges &amp; Technologies</div>
-    <div id="test3" class="col s12">Education</div>
+    <div id="languages" class="col s12 center-align">
+        <h5>Programming Languages</h5>
+        <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript &amp; jQuery</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++/C#</li>
+            <li>SQL</li>
+        </ul>
+    </div>
+    <div id="education" class="col s12 center-align">
+        <h5>Queens College, City University of New York</h5>
+        <h6>Bachelors of Science, Computer Science 2018</h6>
+        <h5>Relevant Courses</h5>
+        <ul>
+            <li>Data Structures</li>
+            <li>Algorithms</li>
+            <li>Software Design</li>
+            <li>Assembly Language</li>
+            <li>Web Development</li>
+            <li>Computer Organization</li>
+            <li>Operating Systems</li>
+            <li>Databases</li>
+        </ul>
+    </div>
 </div>
+
+{% include 'portfolio/randomProjects.html' %}
+
 {% endblock %}
