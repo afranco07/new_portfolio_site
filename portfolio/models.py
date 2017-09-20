@@ -15,7 +15,7 @@ class Project(models.Model):
     info = models.TextField(blank=False)
     gif = models.URLField(blank=False)
     github = models.URLField(blank=False)
-    website = models.URLField()
+    website = models.URLField(blank=True)
 
     def __str__(self):
         return self.title

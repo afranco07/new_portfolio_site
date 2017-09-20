@@ -10,12 +10,12 @@
     <body>
         <nav>
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Alberto Franco</a>
+                <a href="/" class="brand-logo">Alberto Franco</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About Me</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{% url 'projects' %}">Projects</a></li>
+                    <li><a href="{% url 'about' %}">About Me</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
                     <li><a href="#">Home</a></li>
@@ -25,43 +25,8 @@
             </div>
         </nav>
 
-        <div class="row">
-            <div class="col s12">
-                <ul class="tabs tabs-fixed-width">
-                    <li class="tab col s3"><a class="active" href="#test1">Experience</a></li>
-                    <li class="tab col s3"><a href="#test2">Languages &amp; Technologies</a></li>
-                    <li class="tab col s3"><a href="#test3">Education</a></li>
-                </ul>
-            </div>
-            <div id="test1" class="col s12">
-                <ul>
-                    <h5>Cox Automotive - Dealertrack</h5>
-                    <h6><strong>Software Engineer,</strong> Intern</h6>
-                    <li>Learned how to use Splunk to search through error logs</li>
-                    <li>Created a Splunk dashboard to assist other engineers in getting concise information from logs.</li>
-                    <li>Used JavaScript to create a script in IBM Datapower that converts XML to their JSON mappings</li>
-                    <li>Learned about the Agile development process and worked on a development team</li>
-                </ul>
-                <ul>
-                    <h5>Accumedic Computer Systems Inc.</h5>
-                    <h6><strong>Web Forms Programmer</strong></h6>
-                    <li>Converted paper documents/forms into computer format for use in hospitals and doctors' offices</li>
-                    <li>Used intelligent user interface design to create web forms</li>
-                    <li>Performed tests to make sure information was displayed properly</li>
-                </ul>
-                <ul>
-                    <h5>York College, City University of New York</h5>
-                    <h6><strong>Robotics Intern</strong></h6>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div id="test2" class="col s12">Langauges &amp; Technologies</div>
-            <div id="test3" class="col s12">Education</div>
-        </div>
+        {% block contentBody %}
+        {% endblock %}
 
         <footer class="page-footer">
             <div class="container">
@@ -73,10 +38,9 @@
                     <div class="col l4 offset-l2 s12">
                         <h5 class="white-text">Links</h5>
                         <ul>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                            <li><a class="grey-text text-lighten-3" href="http://github.com/afranco07" target="_blank">GitHub</a></li>
+                            <li><a class="grey-text text-lighten-3" href="http://linkedin.com/in/afranco07" target="_blank">LinkedIn</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!" target="_blank">Email</a></li>
                         </ul>
                     </div>
                 </div>
