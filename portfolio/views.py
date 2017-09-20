@@ -10,8 +10,17 @@ def index(request):
     return render(request, 'portfolio/infoTabs.html', context=context_dict)
 
 def projects(request):
-    data = Project.objects.filter(language__language='iOS')
-    return render(request, 'portfolio/iOSProjects.html', {"data": data})
+    ios_projects = Project.objects.filter(language__language='iOS')
+    java_projects = Project.objects.filter(language__language='Java')
+    html_projects = Project.objects.filter(language__language='HTML/CSS')
+    python_projects = Project.objects.filter(language__language='Python')
+    projects = {
+        "iOSProjects": ios_projects,
+        "JavaProjects": java_projects,
+        "HTML": html_projects,
+        "PythonProjects": python_projects,
+    }
+    return render(request, 'portfolio/projectsPage.html', projects)
 
 def about(request):
     return render(request, 'portfolio/aboutPage.html', {})

@@ -10,6 +10,7 @@ class Language(models.Model):
 
 class Project(models.Model):
     title = models.CharField(max_length=128, blank=False)
+    modal_title = models.CharField(max_length=128, blank=False)
     language = models.ForeignKey(Language)
     img_source = models.URLField(blank=False)
     info = models.TextField(blank=False)
