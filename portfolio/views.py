@@ -1,13 +1,18 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from portfolio.models import Project, Language
+import random
 
 # Create your views here.
 
 def index(request):
-    context_dict = {'boldmessage': "Crunchy, creamy, cookie, candy, cupcake!"}
+    all_projects = Project.objects.all()
+    random_projects = []
+    for x in range(3):
+        number = random.randint(0, len(all_projects) - 1)
+        random_projects.append(all_projects[number])
 
-    return render(request, 'portfolio/infoTabs.html', context=context_dict)
+    return render(request, 'portfolio/infoTabs.html', {"randomProjects": random_projects})
 
 def projects(request):
     ios_projects = Project.objects.filter(language__language='iOS')

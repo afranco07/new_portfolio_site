@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="{% static "css/materialize.css" %}"  media="screen,projection"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <nav>
@@ -13,9 +14,9 @@
                 <a href="/" class="brand-logo">Alberto Franco</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="{% url 'projects' %}">Projects</a></li>
-                    <li><a href="{% url 'about' %}">About Me</a></li>
+                    <li><a href="/"><i class="material-icons left">place</i>Home</a></li>
+                    <li><a href="{% url 'projects' %}"><i class="tiny material-icons left">folder</i>Projects</a></li>
+                    <li><a href="{% url 'about' %}"><i class="tiny material-icons left">contact_mail</i>About Me</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
                     <li><a href="#">Home</a></li>
@@ -32,7 +33,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
-                        <h5 class="white-text">Footer Content</h5>
+                        <h5 class="white-text">Points of Contact</h5>
                         <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
                     </div>
                     <div class="col l4 offset-l2 s12">
@@ -48,7 +49,7 @@
             <div class="footer-copyright">
                 <div class="container">
                     © 2017 Copyright Text
-                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                    <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
                 </div>
             </div>
         </footer>

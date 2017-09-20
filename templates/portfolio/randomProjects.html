@@ -1,10 +1,11 @@
 {% load staticfiles %}
 <div class="divider"></div>
+<div class="section">
+    <h6 class="center-align">The following projects were selected at random... visit <a href="/projects/">Projects Page</a> for all my projects</h6>
+    <h6 class="center-align">Also check out my <a href="http://github.com/afranco07">GitHub</a> for all the source code</h6>      
+</div>
 <div class="container">
-    <div class="row section">
-        <div class="col s12 center-align">
-            <h6>The following projects were selected at random... visit <a href="/projects/">Projects Page</a> for all my projects</h6>                
-        </div>
+    <div class="row">
         {% for project in randomProjects %}
         <div class="col s12 m6 l4">
                 <div class="card small hoverable sticky-action">
