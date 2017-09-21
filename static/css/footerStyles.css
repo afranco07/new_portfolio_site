@@ -3,5 +3,32 @@ div > a > i {
 }
 
 div > a > i:hover {
-    color: lightgrey;
+    color: #0d47a1;
+}
+
+#jumboHeader {
+    height: 400px;
+    background: url('https://images.pexels.com/photos/34088/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+#randoProjects {
+    /* Temporarly empty */
+}
+
+#javaBackground {
+    /* Temporarly empty */
+}
+
+#pythonBackground {
+    /* Temporarly empty */
+}
+
+.projectHeading {
+    background-color: #F5F5F5;
+}
+
+body {
+    background-color: lightgrey;
 }

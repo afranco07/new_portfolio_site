@@ -1,5 +1,6 @@
 {% load staticfiles %}
-<div class="divider"></div>
+<div id="randoProjects">
+<div class="divider black"></div>
 <div class="section">
     <h6 class="center-align">The following projects were selected at random... visit <a href="/projects/">Projects Page</a> for all my projects</h6>
     <h6 class="center-align">Also check out my <a href="http://github.com/afranco07">GitHub</a> for all the source code</h6>      
@@ -20,13 +21,14 @@
                         <p>{{ project.info }}</p>
                     </div>
                     <div class="card-action">
-                        <a href="{{ project.github }}" target="_blank">GitHub</a>
-                        <a class="waves-effect waves-light modal-trigger" href="#{{ project.modal_title }}">.GIF</a>
+                        <a href="{{ project.github }}" class="blue-text blue-darken-4" target="_blank">GitHub</a>
+                        <a class="waves-effect waves-light modal-trigger blue-text blue-darken-4" href="#{{ project.modal_title }}">.GIF</a>
                     </div>
                 </div>
             </div>
         {% endfor %}
     </div>
+</div>
 </div>
 
 {% for project in randomProjects %}
