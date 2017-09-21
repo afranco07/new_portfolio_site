@@ -1,0 +1,7 @@
+div > a > i {
+    color: white;
+}
+
+div > a > i:hover {
+    color: lightgrey;
+}
