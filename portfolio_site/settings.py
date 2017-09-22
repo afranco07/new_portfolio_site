@@ -30,7 +30,7 @@ SECRET_KEY = 'h=x3rqzdcgwv++r^nrwz(zywe+$$2%*ecjw$i4a!w-qe4*v%qo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'fierce-cove-31086.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0', 'alberto-portfolio.herokuapp.com']
 
 
 # Application definition
