@@ -8,6 +8,8 @@ import random
 def index(request):
     all_projects = Project.objects.all()
     random_projects = []
+    if len(all_projects) == 0:
+        return render(request, 'portfolio/infoTabs.html')
     for x in range(3):
         number = random.randint(0, len(all_projects) - 1)
         random_projects.append(all_projects[number])
