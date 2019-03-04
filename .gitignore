@@ -4,3 +4,4 @@ db.sqlite3
 djangoPortfolio
 staticfiles
 .env
+.idea/
