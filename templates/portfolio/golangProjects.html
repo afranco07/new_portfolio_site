@@ -5,7 +5,7 @@
         <h4 class="center-align projectHeading">Golang Projects</h4>
     </div>
     <div class="row">
-        {% for project in iOSProjects %}
+        {% for project in GolangProjects %}
         <div class="col s12 m6 l4">
             <div class="card small hoverable sticky-action">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -30,7 +30,7 @@
     </div>
 </div>
 
-{% for project in iOSProjects %}
+{% for project in GolangProjects %}
 <div id="{{ project.modal_title }}" class="modal">
     <div class="modal-content">
         <h4>{{ project.title }}</h4>
